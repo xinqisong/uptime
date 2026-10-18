@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-10-18T15:01:06.431Z",
+  "sites": [
+    {
+      "slug": "personal-site",
+      "name": "个人主站",
+      "url": "https://istsong.com/",
+      "status": "up",
+      "responseTime": 176,
+      "uptime": "100.00%"
+    },
+    {
+      "slug": "www",
+      "name": "主站 WWW",
+      "url": "https://www.istsong.com/",
+      "status": "up",
+      "responseTime": 126,
+      "uptime": "100.00%"
+    },
+    {
+      "slug": "blog",
+      "name": "技术笔记",
+      "url": "https://blog.istsong.com/",
+      "status": "up",
+      "responseTime": 150,
+      "uptime": "100.00%"
+    }
+  ]
+}
