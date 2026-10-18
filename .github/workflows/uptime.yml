@@ -1,0 +1,49 @@
+name: Upptime Checks
+on:
+  schedule:
+    - cron: '2-59/5 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.upptimerc.yml'
+      - '.github/workflows/uptime.yml'
+      - 'scripts/export-status.mjs'
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: upptime-data
+  cancel-in-progress: false
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Check the three public websites
+        uses: upptime/uptime-monitor@a284d6064bcbf89db3f1e2a6c533d0e69111573b # v1.46.0
+        with:
+          command: update
+        env:
+          GH_PAT: ${{ github.token }}
+          SECRETS_CONTEXT: '{}'
+      - name: Generate availability summary
+        uses: upptime/uptime-monitor@a284d6064bcbf89db3f1e2a6c533d0e69111573b # v1.46.0
+        with:
+          command: summary
+        env:
+          GH_PAT: ${{ github.token }}
+          SECRETS_CONTEXT: '{}'
+      - name: Export fresh data for the personal-site status light
+        run: node scripts/export-status.mjs
+      - name: Save the public status feed
+        run: |
+          git add api/status.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update public status feed [skip ci]'
+            git push origin HEAD:main
+          fi

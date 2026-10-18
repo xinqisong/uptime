@@ -1,0 +1,57 @@
+name: Publish Status Page
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: [Upptime Checks]
+    types: [completed]
+  schedule:
+    - cron: '19 2 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/**'
+      - '.github/workflows/site.yml'
+permissions:
+  contents: read
+concurrency:
+  group: upptime-page
+  cancel-in-progress: false
+jobs:
+  build:
+    if: >-
+      (github.event_name != 'push' || github.event.before != '0000000000000000000000000000000000000000') &&
+      (github.event_name != 'workflow_run' ||
+      (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event != 'schedule'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Verify that real monitoring data exists
+        run: node -e "const fs=require('node:fs');const data=JSON.parse(fs.readFileSync('history/summary.json','utf8'));if(data.length!==3)process.exit(1)"
+      - uses: actions/configure-pages@v5
+      - name: Build the official Upptime status page
+        uses: upptime/uptime-monitor@a284d6064bcbf89db3f1e2a6c533d0e69111573b # v1.46.0
+        with:
+          command: site
+        env:
+          GH_PAT: ${{ github.token }}
+          SECRETS_CONTEXT: '{}'
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site/status-page/__sapper__/export
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

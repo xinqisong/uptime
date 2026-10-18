@@ -1,0 +1,18 @@
+:root {
+  --body-background-color: #0a1011;
+  --body-text-color: #edf4f0;
+  --card-background-color: #121b1b;
+  --card-border-color: #293635;
+  --nav-background-color: #101919;
+  --nav-border-bottom-color: #293635;
+  --nav-current-border-bottom-color: #b5f4d5;
+  --up-border-left-color: #b5f4d5;
+  --degraded-border-left-color: #e7bf77;
+  --down-border-left-color: #f38383;
+  --link-color: #b5f4d5;
+}
+body { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif; }
+nav { border-bottom: 1px solid #293635; }
+article, .card { border-radius: 16px; }
+h1, h2 { letter-spacing: -.03em; }
+a { text-underline-offset: 4px; }

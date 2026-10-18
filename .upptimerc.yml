@@ -1,0 +1,104 @@
+owner: xinqisong
+repo: uptime
+secrets: []
+assignees:
+  - xinqisong
+skipDeleteIssues: true
+skipDescriptionUpdate: true
+skipTopicsUpdate: true
+skipHomepageUpdate: true
+
+sites:
+  - name: 个人主站
+    slug: personal-site
+    url: https://istsong.com/
+    icon: https://istsong.com/favicon.svg
+    expectedStatusCodes: [200]
+    maxResponseTime: 5000
+    connectTimeout: 10
+    requestTimeout: 30
+    maxRetries: 2
+    __dangerous__body_down_if_text_missing: 代码之间
+  - name: 主站 WWW
+    slug: www
+    url: https://www.istsong.com/
+    icon: https://istsong.com/favicon.svg
+    expectedStatusCodes: [200]
+    maxResponseTime: 5000
+    connectTimeout: 10
+    requestTimeout: 30
+    maxRetries: 2
+    __dangerous__body_down_if_text_missing: 代码之间
+  - name: 技术笔记
+    slug: blog
+    url: https://blog.istsong.com/
+    icon: https://istsong.com/favicon.svg
+    expectedStatusCodes: [200]
+    maxResponseTime: 5000
+    connectTimeout: 10
+    requestTimeout: 30
+    maxRetries: 2
+    __dangerous__body_down_if_text_missing: 技术笔记
+
+status-website:
+  cname: status.istsong.com
+  name: XINQISONG · 站点状态
+  logoUrl: https://status.istsong.com/logo.svg
+  faviconSvg: https://status.istsong.com/logo.svg
+  theme: dark
+  introTitle: "**每一次访问，都值得被认真对待。**"
+  introMessage: "这里记录个人主站与技术笔记的可用情况。约每 5 分钟计划检查一次；数据来自监测节点，历史从启用监测后逐步积累。"
+  navbar:
+    - title: 站点状态
+      href: /
+    - title: 个人主站
+      href: https://istsong.com/
+    - title: 技术笔记
+      href: https://blog.istsong.com/
+  links:
+    - rel: stylesheet
+      href: /custom.css
+
+i18n:
+  locale: zh-CN
+  activeIncidents: 当前故障
+  allSystemsOperational: 所有站点运行正常
+  degradedPerformance: 部分站点响应较慢
+  completeOutage: 所有站点暂时不可用
+  partialOutage: 部分站点暂时不可用
+  incidentReport: "查看故障记录 #$NUMBER →"
+  activeIncidentSummary: "$DATE 开始，共 $POSTS 条更新"
+  incidentTitle: "故障 #$NUMBER"
+  incidentDetails: 故障详情
+  incidentFixed: 已恢复
+  incidentOngoing: 处理中
+  incidentOpenedAt: 开始时间
+  incidentClosedAt: 恢复时间
+  incidentViewOnGitHub: 在 GitHub 查看与订阅
+  incidentCommentSummary: "$AUTHOR 于 $DATE 更新"
+  incidentBack: ← 返回所有故障
+  pastIncidents: 历史故障
+  pastIncidentsResolved: "$MINUTES 分钟后恢复，共 $POSTS 条更新"
+  liveStatus: 当前状态
+  overallUptime: "可用率：$UPTIME"
+  overallUptimeTitle: 可用率
+  averageResponseTime: "平均响应：$TIMEms"
+  averageResponseTimeTitle: 平均响应
+  sevelDayResponseTime: 近 7 天响应时间
+  responseTimeMs: 响应时间（毫秒）
+  up: 正常
+  down: 不可用
+  degraded: 响应较慢
+  loading: 正在读取监测数据
+  errorTitle: 暂时无法读取监测数据
+  errorIntro: 获取最新状态时遇到问题。
+  errorText: 请稍后重试，也可以在 GitHub 查看原始记录。
+  errorHome: 返回状态页
+  footer: "[监测记录]($REPO) · Powered by [Upptime](https://upptime.js.org)"
+  scheduledMaintenance: 计划维护
+  pastScheduledMaintenance: 历史维护
+  duration24H: 24 小时
+  duration7D: 7 天
+  duration30D: 30 天
+  duration1Y: 1 年
+  durationAll: 全部
