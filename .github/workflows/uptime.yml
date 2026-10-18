@@ -40,6 +40,8 @@ jobs:
           SECRETS_CONTEXT: '{}'
       - name: Export fresh data for the personal-site status light
         run: node scripts/export-status.mjs
+        env:
+          GH_TOKEN: ${{ github.token }}
       - name: Save the public status feed
         run: |
           git add api/status.json
