@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-10-18T15:15:27.616Z",
+  "checkedAt": "2026-10-18T15:16:01.993Z",
   "sites": [
     {
       "slug": "personal-site",
       "name": "个人主站",
       "url": "https://istsong.com/",
       "status": "up",
-      "responseTime": 176,
+      "responseTime": 141,
       "uptime": "100.00%"
     },
     {
@@ -14,7 +14,7 @@
       "name": "主站 WWW",
       "url": "https://www.istsong.com/",
       "status": "up",
-      "responseTime": 126,
+      "responseTime": 129,
       "uptime": "100.00%"
     },
     {
@@ -22,7 +22,7 @@
       "name": "技术笔记",
       "url": "https://blog.istsong.com/",
       "status": "up",
-      "responseTime": 150,
+      "responseTime": 175,
       "uptime": "100.00%"
     }
   ]
