@@ -1,0 +1,50 @@
+name: Upptime Metrics
+on:
+  schedule:
+    - cron: '19 */6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: upptime-data
+  cancel-in-progress: false
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Record response-time samples
+        uses: upptime/uptime-monitor@a284d6064bcbf89db3f1e2a6c533d0e69111573b
+        with:
+          command: response-time
+        env:
+          GH_PAT: ${{ github.token }}
+          SECRETS_CONTEXT: '{}'
+      - name: Refresh summary
+        uses: upptime/uptime-monitor@a284d6064bcbf89db3f1e2a6c533d0e69111573b
+        with:
+          command: summary
+        env:
+          GH_PAT: ${{ github.token }}
+          SECRETS_CONTEXT: '{}'
+      - name: Generate graphs and uptime badges
+        uses: upptime/uptime-monitor@a284d6064bcbf89db3f1e2a6c533d0e69111573b
+        with:
+          command: graphs
+        env:
+          GH_PAT: ${{ github.token }}
+          SECRETS_CONTEXT: '{}'
+      - name: Export the latest checked status
+        run: node scripts/export-status.mjs
+      - name: Save the public status feed
+        run: |
+          git add api/status.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh public status feed [skip ci]'
+            git push origin HEAD:main
+          fi

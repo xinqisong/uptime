@@ -11,7 +11,7 @@ if (!Array.isArray(summary) || summary.length !== expected.size) {
 }
 const seen = new Set()
 const sites = summary.map(({ slug, name, url, status, time, uptime }) => {
-  if (expected.get(slug) !== url || seen.has(slug) || !['up', 'down', 'degraded'].includes(status)) {
+  if (!expected.has(slug) || expected.get(slug) !== url || seen.has(slug) || !['up', 'down', 'degraded'].includes(status)) {
     throw new Error('Unexpected monitor result')
   }
   seen.add(slug)

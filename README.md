@@ -20,6 +20,7 @@
 
 - `.upptimerc.yml`：三个站点、5 秒慢响应阈值、中文文案和状态页风格。
 - `.github/workflows/uptime.yml`：每 5 分钟计划检查，记录故障并指派 `xinqisong`；GitHub 通知是否发送邮件由账户通知偏好控制。
+- `.github/workflows/metrics.yml`：每 6 小时记录响应耗时并生成图表和可用率徽章。
 - `.github/workflows/site.yml`：通过 GitHub 官方 Pages Actions 发布状态页，首次监测、手动检查后及每天刷新构建。
 - `api/status.json`：供主站页脚读取的公开结果，包含检查时间。工作流异常或数据过期时，主站显示未知状态。
 - `skipDeleteIssues: true`：保留所有故障记录，包括短暂故障。
