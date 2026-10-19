@@ -1,15 +1,15 @@
 {
-  "checkedAt": "2026-10-19T10:20:04.132Z",
+  "checkedAt": "2026-10-19T13:26:43.829Z",
   "sites": [
     {
       "slug": "personal-site",
       "name": "个人主站",
       "url": "https://istsong.com/",
-      "status": "up",
-      "responseTime": 91,
-      "averageResponseTime": 117,
+      "status": "down",
+      "responseTime": 175,
+      "averageResponseTime": 129,
       "code": 200,
-      "uptime": "100.00%",
+      "uptime": "99.97%",
       "startTime": "2026-10-18T15:00:56.962Z",
       "samples": [
         {
@@ -27,6 +27,10 @@
         {
           "at": "2026-10-19T04:47:18.690Z",
           "ms": 91
+        },
+        {
+          "at": "2026-10-19T13:25:49.413Z",
+          "ms": 175
         }
       ]
     },
@@ -34,11 +38,11 @@
       "slug": "www",
       "name": "主站 WWW",
       "url": "https://www.istsong.com/",
-      "status": "up",
-      "responseTime": 59,
-      "averageResponseTime": 104,
+      "status": "down",
+      "responseTime": 133,
+      "averageResponseTime": 110,
       "code": 200,
-      "uptime": "100.00%",
+      "uptime": "99.99%",
       "startTime": "2026-10-18T15:00:57.482Z",
       "samples": [
         {
@@ -56,6 +60,10 @@
         {
           "at": "2026-10-19T04:47:18.781Z",
           "ms": 59
+        },
+        {
+          "at": "2026-10-19T13:26:04.533Z",
+          "ms": 133
         }
       ]
     },
@@ -64,8 +72,8 @@
       "name": "技术笔记",
       "url": "https://blog.istsong.com/",
       "status": "up",
-      "responseTime": 114,
-      "averageResponseTime": 177,
+      "responseTime": 211,
+      "averageResponseTime": 184,
       "code": 200,
       "uptime": "100.00%",
       "startTime": "2026-10-18T15:00:57.878Z",
@@ -85,9 +93,30 @@
         {
           "at": "2026-10-19T04:47:18.921Z",
           "ms": 114
+        },
+        {
+          "at": "2026-10-19T13:26:07.078Z",
+          "ms": 211
         }
       ]
     }
   ],
-  "incidents": []
+  "incidents": [
+    {
+      "number": 2,
+      "title": "🛑 主站 WWW is down",
+      "url": "https://github.com/xinqisong/uptime/issues/2",
+      "state": "open",
+      "startedAt": "2026-10-19T13:26:05Z",
+      "closedAt": null
+    },
+    {
+      "number": 1,
+      "title": "🛑 个人主站 is down",
+      "url": "https://github.com/xinqisong/uptime/issues/1",
+      "state": "open",
+      "startedAt": "2026-10-19T13:25:50Z",
+      "closedAt": null
+    }
+  ]
 }
