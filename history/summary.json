@@ -5,18 +5,18 @@
     "icon": "https://istsong.com/favicon.svg",
     "slug": "personal-site",
     "status": "down",
-    "uptime": "73.73%",
-    "uptimeDay": "66.73%",
-    "uptimeWeek": "73.73%",
-    "uptimeMonth": "73.73%",
-    "uptimeYear": "73.73%",
-    "time": 129,
-    "timeDay": 133,
-    "timeWeek": 129,
-    "timeMonth": 129,
-    "timeYear": 129,
+    "uptime": "71.40%",
+    "uptimeDay": "62.58%",
+    "uptimeWeek": "71.40%",
+    "uptimeMonth": "71.40%",
+    "uptimeYear": "71.40%",
+    "time": 128,
+    "timeDay": 129,
+    "timeWeek": 128,
+    "timeMonth": 128,
+    "timeYear": 128,
     "dailyMinutesDown": {
-      "2026-10-19": 479
+      "2026-10-19": 539
     }
   },
   {
@@ -25,18 +25,18 @@
     "icon": "https://istsong.com/favicon.svg",
     "slug": "www",
     "status": "down",
-    "uptime": "73.75%",
-    "uptimeDay": "66.75%",
-    "uptimeWeek": "73.75%",
-    "uptimeMonth": "73.75%",
-    "uptimeYear": "73.75%",
-    "time": 110,
-    "timeDay": 96,
-    "timeWeek": 110,
-    "timeMonth": 110,
-    "timeYear": 110,
+    "uptime": "71.41%",
+    "uptimeDay": "62.60%",
+    "uptimeWeek": "71.41%",
+    "uptimeMonth": "71.41%",
+    "uptimeYear": "71.41%",
+    "time": 144,
+    "timeDay": 168,
+    "timeWeek": 144,
+    "timeMonth": 144,
+    "timeYear": 144,
     "dailyMinutesDown": {
-      "2026-10-19": 479
+      "2026-10-19": 539
     }
   },
   {
@@ -50,11 +50,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 184,
-    "timeDay": 163,
-    "timeWeek": 184,
-    "timeMonth": 184,
-    "timeYear": 184,
+    "time": 188,
+    "timeDay": 178,
+    "timeWeek": 188,
+    "timeMonth": 188,
+    "timeYear": 188,
     "dailyMinutesDown": {}
   }
 ]
