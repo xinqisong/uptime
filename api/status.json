@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-22T11:59:47.905Z",
+  "checkedAt": "2026-10-22T15:21:48.307Z",
   "sites": [
     {
       "slug": "personal-site",
@@ -9,7 +9,7 @@
       "responseTime": 62,
       "averageResponseTime": 92,
       "code": 200,
-      "uptime": "24.11%",
+      "uptime": "23.26%",
       "startTime": "2026-10-18T15:00:56.962Z",
       "samples": [
         {
@@ -86,7 +86,7 @@
       "responseTime": 53,
       "averageResponseTime": 101,
       "code": 200,
-      "uptime": "24.11%",
+      "uptime": "100.00%",
       "startTime": "2026-10-18T15:00:57.482Z",
       "samples": [
         {
@@ -233,22 +233,5 @@
       ]
     }
   ],
-  "incidents": [
-    {
-      "number": 2,
-      "title": "🛑 主站 WWW is down",
-      "url": "https://github.com/xinqisong/uptime/issues/2",
-      "state": "open",
-      "startedAt": "2026-10-19T13:26:05Z",
-      "closedAt": null
-    },
-    {
-      "number": 1,
-      "title": "🛑 个人主站 is down",
-      "url": "https://github.com/xinqisong/uptime/issues/1",
-      "state": "open",
-      "startedAt": "2026-10-19T13:25:50Z",
-      "closedAt": null
-    }
-  ]
+  "incidents": []
 }
