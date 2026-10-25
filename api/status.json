@@ -1,15 +1,15 @@
 {
-  "checkedAt": "2026-10-25T06:42:21.694Z",
+  "checkedAt": "2026-10-25T11:39:10.810Z",
   "sites": [
     {
       "slug": "personal-site",
       "name": "个人主站",
       "url": "https://istsong.com/",
       "status": "down",
-      "responseTime": 58,
-      "averageResponseTime": 82,
+      "responseTime": 60,
+      "averageResponseTime": 81,
       "code": 200,
-      "uptime": "14.04%",
+      "uptime": "13.62%",
       "startTime": "2026-10-18T15:00:56.962Z",
       "samples": [
         {
@@ -119,6 +119,10 @@
         {
           "at": "2026-10-25T04:48:46.554Z",
           "ms": 58
+        },
+        {
+          "at": "2026-10-25T11:38:33.894Z",
+          "ms": 60
         }
       ]
     },
@@ -127,10 +131,10 @@
       "name": "主站 WWW",
       "url": "https://www.istsong.com/",
       "status": "down",
-      "responseTime": 46,
-      "averageResponseTime": 87,
+      "responseTime": 56,
+      "averageResponseTime": 85,
       "code": 200,
-      "uptime": "14.04%",
+      "uptime": "13.62%",
       "startTime": "2026-10-18T15:00:57.482Z",
       "samples": [
         {
@@ -240,6 +244,10 @@
         {
           "at": "2026-10-25T04:48:58.779Z",
           "ms": 46
+        },
+        {
+          "at": "2026-10-25T11:38:46.148Z",
+          "ms": 56
         }
       ]
     },
@@ -248,8 +256,8 @@
       "name": "技术笔记",
       "url": "https://blog.istsong.com/",
       "status": "up",
-      "responseTime": 137,
-      "averageResponseTime": 204,
+      "responseTime": 272,
+      "averageResponseTime": 206,
       "code": 200,
       "uptime": "100.00%",
       "startTime": "2026-10-18T15:00:57.878Z",
@@ -361,6 +369,10 @@
         {
           "at": "2026-10-25T04:48:58.943Z",
           "ms": 137
+        },
+        {
+          "at": "2026-10-25T11:38:46.442Z",
+          "ms": 272
         }
       ]
     }
