@@ -1,21 +1,17 @@
 {
-  "checkedAt": "2026-11-13T16:20:19.655Z",
+  "checkedAt": "2026-11-13T19:47:29.699Z",
   "sites": [
     {
       "slug": "personal-site",
       "name": "个人主站",
       "url": "https://istsong.com/",
       "status": "down",
-      "responseTime": 83,
+      "responseTime": 114,
       "averageResponseTime": 90,
       "code": 200,
-      "uptime": "3.58%",
+      "uptime": "3.56%",
       "startTime": "2026-10-18T15:00:56.962Z",
       "samples": [
-        {
-          "at": "2026-10-31T21:40:25.017Z",
-          "ms": 108
-        },
         {
           "at": "2026-11-01T06:15:02.541Z",
           "ms": 59
@@ -131,6 +127,10 @@
         {
           "at": "2026-11-13T06:52:00.054Z",
           "ms": 83
+        },
+        {
+          "at": "2026-11-13T19:46:47.333Z",
+          "ms": 114
         }
       ]
     },
@@ -139,16 +139,12 @@
       "name": "主站 WWW",
       "url": "https://www.istsong.com/",
       "status": "down",
-      "responseTime": 63,
+      "responseTime": 103,
       "averageResponseTime": 89,
       "code": 200,
-      "uptime": "3.59%",
+      "uptime": "3.57%",
       "startTime": "2026-10-18T15:00:57.482Z",
       "samples": [
-        {
-          "at": "2026-10-31T21:40:37.419Z",
-          "ms": 94
-        },
         {
           "at": "2026-11-01T06:15:14.809Z",
           "ms": 55
@@ -264,6 +260,10 @@
         {
           "at": "2026-11-13T06:52:12.367Z",
           "ms": 63
+        },
+        {
+          "at": "2026-11-13T19:46:59.746Z",
+          "ms": 103
         }
       ]
     },
@@ -272,16 +272,12 @@
       "name": "技术笔记",
       "url": "https://blog.istsong.com/",
       "status": "up",
-      "responseTime": 222,
-      "averageResponseTime": 229,
+      "responseTime": 605,
+      "averageResponseTime": 233,
       "code": 200,
       "uptime": "100.00%",
       "startTime": "2026-10-18T15:00:57.878Z",
       "samples": [
-        {
-          "at": "2026-10-31T21:40:37.693Z",
-          "ms": 249
-        },
         {
           "at": "2026-11-01T06:15:15.015Z",
           "ms": 183
@@ -397,6 +393,10 @@
         {
           "at": "2026-11-13T06:52:12.617Z",
           "ms": 222
+        },
+        {
+          "at": "2026-11-13T19:47:00.385Z",
+          "ms": 605
         }
       ]
     }
