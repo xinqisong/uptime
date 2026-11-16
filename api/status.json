@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-16T06:39:13.971Z",
+  "checkedAt": "2026-11-16T08:31:59.194Z",
   "sites": [
     {
       "slug": "personal-site",
@@ -9,7 +9,7 @@
       "responseTime": 56,
       "averageResponseTime": 88,
       "code": 200,
-      "uptime": "3.26%",
+      "uptime": "3.25%",
       "startTime": "2026-10-18T15:00:56.962Z",
       "samples": [
         {
@@ -142,7 +142,7 @@
       "responseTime": 60,
       "averageResponseTime": 88,
       "code": 200,
-      "uptime": "3.26%",
+      "uptime": "3.25%",
       "startTime": "2026-10-18T15:00:57.482Z",
       "samples": [
         {
